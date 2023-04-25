@@ -1,0 +1,113 @@
+.hp-main-layout-content {
+    margin-top: -40px !important;
+}
+
+.hp-main-layout header>.row>.col {
+    background-color: #0275d8 !important;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+}
+
+.accordion-body {
+    padding: 16px 10px;
+}
+
+.label-payment {
+    background-color: white !important;
+}
+
+.badge-payment {
+    border: none !important;
+}
+
+.hp-profile-menu{
+    justify-content:start !important;
+    min-height:0cm !important;
+}
+
+.swal-title{
+    margin-bottom: 28px;
+    font-size: 16px !important;
+    color: black;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .21);
+    padding: .8em 1em !important;
+    text-align: left !important
+}
+
+.subscribe {
+    width: 100% !important;
+    background-color: #0275d8;
+    right: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.p-20 {
+    padding: 0px 20px;
+}
+
+.black-strip {
+    background-color: #0275d8;
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.swal-text {
+    font-weight: 200;
+    text-align: left !important;
+    font-size: 16px !important
+}
+
+.btn-link{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer !important;
+    padding: 0;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+div.hp-main-layout-content h5.section-title::before {
+    content: ' ';
+    border-radius: 5px;
+    height: 8px;
+    width: 30px;
+    background-color: #0010f7;
+    display: inline-block;
+    float: left;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+@media (max-width: 575.98px) {
+    .hp-main-layout-content {
+        margin-top: -30px !important;
+    }
+    .slider {
+        width: 800px;
+        height: 100px;
+    }
+
+}

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <head>
+        <title>KpStore</title>
+        <!-- General Meta -->
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Home -  KpStore">
+        <meta name="description" content="KpStore adalah sebuah marketplace penyedia layanan topup games terbaik #1 Indonesia, dengan harga termurah dan proses super instan. Dapatkan lebih banyak promo dan potongan harga dengan cara bergabung menjadi member / pelanggan Premium.">
+        <meta name="keywords" content="KpStore adalah sebuah marketplace penyedia layanan topup games terbaik #1 Indonesia, dengan harga termurah dan proses super instan. Dapatkan lebih banyak promo dan potongan harga dengan cara bergabung menjadi member / pelanggan Premium.">
+        <meta name="author" content="flii">
+        <!-- General CSS Files -->
+        <link rel="stylesheet" href="css/bootstrap.min509e.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="css/datatables.min_1.css">
+        <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="css/select.bootstrap4.min.css">
+        <link rel="stylesheet" href="css/bs-stepper.min.css">
+        <link rel="stylesheet" href="css/orderForm509e.css">
+        <link rel="stylesheet" href="css/payment509e.css">
+        <!-- Favicon -->
+        <link rel="icon" href="images/kp.png" type="image/png">
+        <!-- Fonts -->
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="css/style_dark509e.css">
+        <link rel="stylesheet" href="css/components_dark509e.css">
+        <link rel="stylesheet" href="css/warunkgamers509e.css">
+        <link rel="stylesheet" href="css/menu509e.css">
+        <link rel="stylesheet" href="css/iziToast.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+                <style>
+            .bg-dark-custom {
+                background-color: #04121E !important;
+            }
+            .bg-white {
+                background-color: #f0f6ff !important;
+            }
+            .navbar-custom, .card-custom{
+                background-color: #ffffff !important;
+            }
+            .navbar-dark, .card-dark{
+                background-color: #152635 !important;
+                border:none !important;
+            }
+        </style>
+    </head>
+    <div class="preloader" style="display: none;">
+        <div class="loading">
+            <img src="images/loader.gif" width="80">
+        </div>
+    </div>
+    <body class="layout-3 bg-white">
+        <div id="app">
+            <div class="main-wrapper container">
+                <div class="navbar-bg bg-white"></div>
+                <nav class="navbar navbar-expand-lg main-navbar">
+                    <div class="container">
+                        <a href="/" class="navbar-brand sidebar-gone-hide">
+                            <img src="images/kallpolo.png" class="img-fluid d-none d-md-block" width="220px">
+                            <img src="images/kallpolo.png" class="img-fluid d-lg-none d-md-inline-block" width="160px">
+                        </a>
+                        <div class="float-start">
+                          <label class="custom-switch mt-2">
+                            <input type="checkbox" name="custom-switch-checkbox" id="lightSwitch" class="custom-switch-input" onclick="switchModee()">
+                            <span class="custom-switch-indicator"></span>
+                          </label>                        
+                        </div>
+                        <!--<div class="form-check float-start form-switch ms-auto mt-3 me-3">-->
+                        <!--    <label class="form-check-label ms-3" for="lightSwitch"></label>-->
+                        <!--    <input class="form-check-input" type="checkbox" id="lightSwitch" />-->
+                        <!--</div>-->
+                        <a href="#" class="nav-link sidebar-gone-show text-dark" data-toggle="sidebar">
+                            <i class="fas fa-bars mt-2"></i>
+                        </a>
+                        <a href="#" class="d-lg-none d-md-inline-block">
+                            <img src="images/kallpolo.png" class="img-fluid" width="155px">
+                        </a>
+                                                                 
+                        <ul class="navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                    <span class="rounded-circle mr-1">
+                                        <i class="fas fa-sign-in-alt"></i>
+                                    </span>
+                                    <div class="d-sm-none d-lg-inline-block">Masuk/Daftar</div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item has-icon">
+                                        <i class="fas fa-sign-in-alt"></i> Masuk </a>
+                                    <a href="#" class="dropdown-item has-icon">
+                                        <i class="fas fa-user-plus"></i> Buat Akun </a>
+                                </div>
+                            </li>
+                        </ul>
+                                            </div>
+                </nav>
+                <nav class="navbar navbar-secondary navbar-expand-lg navbar-custom">
+                    <div class="container">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-home"></i>
+                                    <span>Beranda</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-search"></i>
+                                    <span>Periksa Pesanan</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list"></i>
+                                    <span>Daftar Layanan</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#/hitung/wr" class="nav-link">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>Hitung WR</span>
+                                </a>
+                            </li>                    
+                            <li class="nav-item">
+                                <a href="#/hitung/zodiac" class="nav-link">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>Hitung Magic Wheel/Zodiac</span>
+                                </a>
+                            </li>                            
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fab fa-android"></i>
+                                    <span>Download Aplikasi</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Content -->
+                <div class="main-content">
+    <div class="banner mt-md-2">
+        <div id="slider_banner" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                                                <li data-target="#slider_banner" data-slide-to="1"></li>
+                            </ol>
+            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                    <img src="images/slide.jpg" class="img-fluid">
+                </div>
+                            </div>
+            <a class="carousel-control-prev" href="#slider_banner" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slider_banner" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class>
+        <div class="banner card-custom ml--4 mb-2" style="display: flex;overflow: auto;">
+            <div class="col text-center py-3 mt-3 mt-md-0" style="border-bottom: 3px solid #26CFC5;">
+                <a style="text-decoration:none;color:#858e96;" class="nav-link active" data-tab="mygroup-tab" href="#tab-game">
+                    <i class="fas fa-ticket-alt mb-2" style="font-size:25px"></i>
+                    <br>
+                    <span style="font-size:11px">Game</span>
+                </a>                
+            </div>
+            <div class="col text-center py-3 mt-3 mt-md-0" style="border-bottom: 3px solid #26CFC5;">
+                <a style="text-decoration:none;color:#858e96;" class="nav-link" data-tab="mygroup-tab" href="#tab-voucher">
+                    <i class="fas fa-ticket-alt mb-2" style="font-size:25px"></i>
+                    <br>
+                    <span style="font-size:11px">Voucher</span>
+                </a>  
+            </div>       
+            <div class="col text-center py-3 mt-3 mt-md-0" style="border-bottom: 3px solid #26CFC5;">
+                <a style="text-decoration:none;color:#858e96;" class="nav-link" data-tab="mygroup-tab" href="#tab-internet">
+                    <i class="fas fa-gamepad mb-2" style="font-size:25px"></i>
+                    <br>
+                    <span style="font-size:11px">Joki</span>
+                </a>  
+            </div>                        
+        </div>
+    </div>
+    <section class="section">
+        <div id="tab-game" class="active" data-tab-group="mygroup-tab">
+            <div class="section-body">
+                <h2 class="section-title">Game</h2>
+                <div class="list-product">
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/XXq6k2inCpzNkaoEe8aCWJtjnFkPiPnbjFDnutOj.png" class="img-product" alt="Mobile Legends A">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Mobile Legends A </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Diamonds </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/mobile-legends-a">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/csdLfOfJBnGIRKm33JlypIfZr5du1UkpA5lAzvRy.png" class="img-product" alt="Mobile Legends B">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Mobile Legends B </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Diamonds </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/mobile-legends-b">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/8UqCB956QHpzB1tmlnlA6RUHCpcmtyqZ178hjIJ4.png" class="img-product" alt="Higgs Domino">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Higgs Domino </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Chip MD </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/higgs-domino">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/g88nIx00x4TBuLizhXFXMd7oUepiQz43oxRijHxA.png" class="img-product" alt="Higgs Domino Emas">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Higgs Domino Emas </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Chip Emas </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/higgs-domino-emas">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/U2GIdtxlU8W698uvcSMl1buSz8Iw7inLCz0Q3nxQ.png" class="img-product" alt="Freefire">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Freefire </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Diamond </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/freefire">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/lklpYrJLBDMSzLAbE62yp1BbaaT9YEU1FVc2Lf2T.jpg" class="img-product" alt="Sausage Man">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Sausage Man </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Candy </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/sausage-man">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/8uHxjWNuJA0QpBh5MKNnE8buTS9WijJ5uiK0aQTh.png" class="img-product" alt="Genshin Impact">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Genshin Impact </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Genesis Crystal </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/genshin-impact">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/UaEJnKvu6CnvQMVvtbLY2jL7ZGHYWcaSirsmbdLE.jpg" class="img-product" alt="Call of duty Mobile">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Call of duty Mobile </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> CP </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/call-of-duty-mobile">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/hhfhRRDwu1iatUHPtS06th7xcsYRJo3WBl4chgRY.jpg" class="img-product" alt="Valorant">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Valorant </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Points </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/valorant">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/rpcbW6beehlmlDhnPTBjTpBH32q33dU2p8ZwBYDw.jpg" class="img-product" alt="Arena of Valor">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Arena of Valor </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Vocuher </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/arena-of-valor">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/FeFIEO0tBZUW6GZezOjwGHW06jLQToIWi6EC55gW.png" class="img-product" alt="League of Legend: Wild Drift">
+                                </div>
+                                <div class="card-title text-truncate text-white"> League of Legend: Wild Drift </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Wild Cores </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/league-of-legend-wild-drift">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/36ezxVQ92k7foaRWiIPWxjKOxL20Jayn9eB2PNkp.jpg" class="img-product" alt="Point Blank">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Point Blank </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Cash </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/point-blank">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/3OaQZQvqDbpPeXnogBZlfijtVORlBMqGJdUgmrRf.png" class="img-product" alt="Lords Mobile">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Lords Mobile </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Diamond </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/lords-mobile">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/ZAQTQH18Z38HVAyHp3ULljg0NfsfndHnNBgrAjQN.jpg" class="img-product" alt="Apex Legends Mobile">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Apex Legends Mobile </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Syndicate Gold </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/apex-legends-mobile">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/3ir1h3T56xxW0E0P9o5fTy4FkFJIKqUPcuUEmqek.png" class="img-product" alt="Hyper Front">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Hyper Front </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Star Quartz </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/hyper-front">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/e3hrIoVmlF6f7lOrVuLAxIsm95S4KSljSELg2ltZ.png" class="img-product" alt="Super Sus">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Super Sus </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Golden Star </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/super-sus">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/BPlrQLC3BCGNqkuxiojWj0SDKkTWHWeNNyWNS9u8.png" class="img-product" alt="Tower Of Fantasy">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Tower Of Fantasy </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Proses Otomatis </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/tower-of-fantasy">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+        <div id="tab-voucher" class data-tab-group="mygroup-tab">
+            <div class="section-body">
+                <h2 class="section-title">Voucher</h2>
+                <div class="list-product">
+                                            <h3 class="text-center">Produk Belum Tersedia...</h3>
+                                    </div>
+            </div>
+        </div>       
+        <div id="tab-internet" class data-tab-group="mygroup-tab">
+            <div class="section-body">
+                <h2 class="section-title">Joki</h2>
+                <div class="list-product">
+                                            <div class="product">
+                            <div class="card-game card-custom">
+                                <div class="card-image">
+                                    <img src="images/rRunoRMc0uM1hng7rnvNWl7sgTmnEdXbJBclFGa1.png" class="img-product" alt="Joki Ranked Mobile Legend">
+                                </div>
+                                <div class="card-title text-truncate text-white"> Joki Ranked Mobile Legend </div>
+                                <div class="card-subtitle text-truncate" style="color: #26CFC5"> Per Star </div>
+                                <div class="card-link px-md-3 pb-2">
+                                    <a style="background-image: linear-gradient(to right, #26B3EA, #26EAA1); color: white; color: #fff" class="btn btn-sm btn-default btn-block stretched-link" href="#/joki-ranked-mobile-legend">Top Up</a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>                    
+    </section>
+</div>
+                <div class="fab-container">
+                    <div class="fab fab-icon-holder bg-danger">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <ul class="fab-options">
+                        <li>
+                            <a href="#" target="_blank">
+                                <div class="fab-icon-holder" style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">
+                                    <i class="fab fa-instagram ml-0"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <div class="fab-icon-holder" style="background-color: #25D366;">
+                                    <i class="fab fa-whatsapp ml-0"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <div class="fab-icon-holder" style="background-color: #3b5998;">
+                                    <i class="fab fa-facebook-f ml-0"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div href="#" class="act-btn-top bg-dark mt-2" onclick="toTop()" style="display: none; bottom: 19px;">
+                        <i class="fas fa-angle-up ml-0" style="font-size: 30px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-md-4 col-12 mb-4">
+                        <h2 class="text-center text-md-left">
+                            <img src="images/kallpolo.png" class="img-fluid mb-3" width="220px">
+                        </h2>
+                        <p class="text-center text-md-left text-dark"> KpStore adalah sebuah marketplace penyedia layanan topup games terbaik #1 Indonesia, dengan harga termurah dan proses super instan. Dapatkan lebih banyak promo dan potongan harga dengan cara bergabung menjadi member / pelanggan Premium.
+                        <div class="row text-center text-md-left">
+                            <div class="col-12 mb-2">
+                                <p class="text-center text-md-left text-dark"> Ikuti Kami</p>
+                                <a href="#" rel="noreferrer" target="_blank" data-cy="facebook-icon">
+                                    <img src="fonts/fb.svg" alt="facebook" width="24" height="24" loading="lazy">&nbsp; </a>
+                                <a href="https://instagram.com/" rel="noreferrer" target="_blank" data-cy="instagram-icon">
+                                    <img src="fonts/ig.svg" alt="Instagram" width="24" height="24" loading="lazy">&nbsp; </a>
+                                <a href="#" rel="noreferrer" target="_blank" data-cy="tiktok-icon">
+                                    <img src="fonts/tiktok.svg" alt="iktok" width="24" height="24" loading="lazy">&nbsp; </a>
+                                <a href="#" rel="noreferrer" target="_blank" data-cy="youtube-icon">
+                                    <img src="fonts/yt.svg" alt="Youtube" width="24" height="24" loading="lazy">&nbsp; </a>
+                            </div>
+                            <div class="col-md-12">
+                                <br>
+                                <div class="text-center text-md-left text-dark">Download Aplikasi Mobile</div>
+                                <a href="https://play.google.com/store/apps/details?id=" data-cy="itemku-lite-icon" class="text-center">
+                                    <img src="images/googleplay-download.png" alt="get in on google play" width="200" loading="lazy" class="text-center">
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 mb-4">
+                        <h3 class="text-center text-md-left text-dark">Peta Situs</h3>
+                        <div class="row text-center text-md-left">
+                            <div class="col-12 mb-2">
+                                <a href="#" class="text-dark">Tentang</a>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <a href="#" class="text-dark">Kebijakan Privasi</a>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <a href="#" class="text-dark">FAQ</a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <a href="#" class="text-dark">Ketentuan Layanan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mb-3">
+                        <h3 class="text-center text-md-left text-dark">Pembayaran</h3>
+                        <marquee>
+                            <img src="images/bca_footer.png" width="80px" class="ml-3 bg-white p-1">
+                            <img src="images/linkaja_footer.png" width="80px" class="ml-3 bg-white p-1">
+                            <img src="images/shopay_footer.png" width="80px" class="ml-3 bg-white p-1">
+                            <img src="images/ovo_footer.png" width="80px" class="ml-3 bg-white p-1">
+                            <img src="images/gopay_footer.png" width="80px" class="ml-3 bg-white p-1">
+                            <img src="images/dana_footer.png" width="80px" class="ml-3 bg-white p-1">
+                            <img src="images/qris_footer.png" width="80px" class="ml-3 bg-white p-1">
+                            <img src="images/indomaret_footer.png" width="80px" class="ml-3 bg-white p-1">
+                        </marquee>
+                    </div>
+                    <footer class="main-footer">
+                        <div class="text-center"> Copyright &copy; 2023 <a href="#" class="text-white">KpStore</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- General JS Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/tooltip.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/stisla.js"></script>
+        <!-- JS Libraies -->
+        <script src="js/datatables.min_1.js"></script>
+        <script src="js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/dataTables.select.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/bs-stepper.min.js"></script>
+        <script src="js/iziToast.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="js/datatables.min.js"></script>        
+        <!-- Page Specific JS File -->
+        <script src="js/modules-datatables.js"></script>
+        <!-- Template JS File -->
+        <script src="js/scripts.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="api.js%27%29%20%7D%7D"></script>
+        <script type="text/javascript">
+            if(localStorage.getItem('isDarkMode') === 'true'){
+                var toogleSwitch = document.getElementById("lightSwitch");
+                toogleSwitch.checked = true;
+                switchModee(true)
+            }   
+            
+            function switchModee(run = null){
+                var toogleSwitch = document.getElementById("lightSwitch");
+                if(toogleSwitch.checked || run == true){
+                    localStorage.setItem('isDarkMode', true);
+                    document.querySelectorAll(".bg-white").forEach((element) => {
+                        element.className = element.className.replace(/-white/g, "-dark-custom");
+                    });
+                    document.querySelectorAll(".navbar-custom").forEach((element) => {
+                        element.className = element.className.replace(/-custom/g, "-dark");
+                    });
+                    document.querySelectorAll(".card-custom").forEach((element) => {
+                        element.className = element.className.replace(/-custom/g, "-dark");
+                    });
+                    document.querySelector(".footer").style.backgroundColor = "#152635";
+                    document.querySelectorAll(".card").forEach((element) => {
+                        element.className += " card-dark"
+                    })
+                    if(document.querySelector("#table_ajax")){
+                        document.querySelector("#table_ajax").style.backgroundColor = "#152635";
+                    }
+                    document.querySelectorAll(".text-dark").forEach((element) => {
+                        element.className = element.className.replace("text-dark", "text-light")
+                    }) 
+                }else{
+                    localStorage.setItem('isDarkMode', false);
+                    document.querySelectorAll(".bg-dark-custom").forEach((element) => {
+                        element.className = element.className.replace(/-dark-custom/g, "-white");
+                    });
+                    document.querySelectorAll(".navbar-dark").forEach((element) => {
+                        element.className = element.className.replace(/-dark/g, "-custom");
+                    });
+                    // document.querySelectorAll(".card .card-dark").forEach((element) => {
+                    //     element.classList.value = "card";
+                    // })                     
+                    
+                    document.querySelectorAll(".card-dark").forEach((element) => {
+                        element.className = element.className.replace(/-dark/g, "-custom");
+                    });
+                    document.querySelector(".footer").style.backgroundColor = "#FFF";
+                    document.querySelector(".card").style.backgroundColor = "#FFF !important";
+                    if(document.querySelector("#table_ajax")){
+                        document.querySelector("#table_ajax").style.backgroundColor = "#FFF";
+                    }
+                    document.querySelectorAll(".text-light").forEach((element) => {
+                        element.className = element.className.replace("text-light", "text-dark")
+                    })                                     
+                }
+            }
+            // (function() {
+            //     let lightSwitch = document.getElementById("lightSwitch");
+            //     if (lightSwitch) {
+            //         darkMode();
+            //         lightSwitch.addEventListener("change", () => {
+            //             lightMode();
+            //         });
+            
+            //         function darkMode() {
+            //             let isSelected = localStorage.getItem("lightSwitch") !== null && localStorage.getItem("lightSwitch") === "dark";
+            //             if (isSelected) {
+            //                 lightSwitch.checked = true;
+            //                 document.querySelectorAll(".bg-light").forEach((element) => {
+            //                     element.className = element.className.replace(/-light/g, "-dark");
+            //                 });
+            //                 document.querySelectorAll(".table-light").forEach((element) => {
+            //                     element.className = element.className.replace(/-light/g, '-dark')
+            //                 })
+            //                 document.body.classList.add("bg-dark");
+            //                 document.body.style.backgroundColor = "#2d3238"
+            //                 if (document.body.classList.contains("text-dark")) {
+            //                     document.body.classList.replace("text-dark", "text-white");
+            //                 } else {
+            //                     document.body.classList.add("text-white");
+            //                 }
+            //                 document.querySelectorAll(".text-dark").forEach((element) => {
+            //                     element.className = element.className.replace("text-dark", "text-white")
+            //                 })
+            //                 document.querySelector("#footer-credit").style.backgroundColor = "#181b1f"
+            //             } else if (localStorage.getItem('lightSwitch') === "white") {
+            //                 lightMode()
+            //             }
+            //         }
+            
+            //         function lightMode() {
+            //             if (lightSwitch.checked) {
+            //                 localStorage.setItem("lightSwitch", "dark");
+            //                 darkMode();
+            //             } else {
+            //                 document.querySelectorAll(".bg-dark").forEach((element) => {
+            //                     element.className = element.className.replace(/-dark/g, "-light");
+            //                 });
+            //                 document.querySelectorAll(".text-white").forEach((element) => {
+            //                     element.className = element.className.replace("text-white", "text-dark")
+            //                 })
+            //                 document.querySelectorAll(".table-dark").forEach((element) => {
+            //                     element.className = element.className.replace(/-dark/g, '-light')
+            //                 })
+            //                 document.body.style.backgroundColor = "#ffff"
+            //                 document.querySelector("#footer-credit").style.backgroundColor = "#d5d5d5"
+            //                 document.body.classList.replace("text-white", "text-dark");
+            //                 localStorage.setItem('lightSwitch', 'white')
+            //             }
+            //         }
+            //     }
+            // })();            
+        </script>
+        <script>
+            $(document).ready(function() {
+                setTimeout(function() {
+                    $(".preloader").fadeOut();
+                }, 200);
+            });
+        </script>
+        <script>
+            mybutton = document.querySelector(".act-btn-top");
+            window.onscroll = function() {
+                scrollFunc()
+            };
+
+            function scrollFunc() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function toTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script> 
+            </body>
+</html>

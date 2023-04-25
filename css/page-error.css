@@ -1,0 +1,53 @@
+/* Error */
+.hp-error-content {
+  min-height: calc(100vh - 60px);
+}
+.hp-error-content-circle {
+  position: absolute;
+  top: 40%;
+  left: 51%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 504px;
+  height: 504px;
+  border-radius: 100%;
+}
+@media screen and (max-width: 767px) {
+  .hp-error-content-circle {
+    width: 80vw;
+    height: 80vw;
+    left: 50%;
+  }
+}
+.hp-error-content .hp-comingsoon-timer-item {
+  min-width: 200px;
+}
+.hp-error-content .hp-comingsoon-timer-item span:nth-child(1) {
+  font-size: 100px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+  .hp-error-content .hp-comingsoon-timer-item {
+    min-width: 16vw;
+  }
+  .hp-error-content .hp-comingsoon-timer-item span:nth-child(1) {
+    font-size: 8vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hp-error-content .hp-comingsoon-timer-item {
+    min-width: 18vw;
+  }
+  .hp-error-content .hp-comingsoon-timer-item span:nth-child(1) {
+    font-size: 11vw;
+    margin-bottom: -8px;
+  }
+  .hp-error-content .hp-comingsoon-timer-item span:nth-child(2) {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hp-error-content-title {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,99 @@
+        .list-group-item {
+            user-select: none;
+        }
+        .paymentSort {
+            font-size: 9px;
+            font-style: italic;
+            color: #6777ef;
+        }
+
+
+
+    .child-box {
+    border: 1px solid rgb(38 207 197);
+    margin-bottom: 18px;
+    border-radius: 7px !important;
+    background: rgba(235, 235, 235, 0.035);
+}
+        .child-box:hover {
+        border: 1px solid #26CFC5;
+        }
+     
+        .button-action-payment li.active {
+        border: 1px solid #6777ef;
+        background: rgb(232, 232, 232);
+        filter: grayscale(0%);
+        }
+        .child-box .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 15px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    cursor: pointer;
+    position: relative;
+}
+.child-box .header .left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.child-box .button-action-payment {
+    padding: 15px;
+    display: none;
+}
+.child-box .short-payment-support-info {
+background: rgb(255 255 255);
+    padding: 11px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.child-box .short-payment-support-info img {
+    height: 13px;
+    margin-right: 7px;
+}
+.child-box .short-payment-support-info .open-button-action-payment {
+    color: #414141;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.child-box .short-payment-support-info {
+background: rgba(174,174,174,.261);
+    padding: 11px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.button-action-payment .info-top {
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.button-action-payment .info-top  {
+    font-size: 12px;
+    font-weight: 600;
+}

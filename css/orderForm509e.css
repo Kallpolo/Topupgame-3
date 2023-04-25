@@ -1,0 +1,203 @@
+    .ap-otp-input {
+        border: 3px solid #ebebeb;
+        border-radius: 18px;
+        width: 35px;
+        height: 53px;
+        margin: 4px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+.list-group input[type="radio"]:checked+label>.row>.col>.row>.nama-layanan-form {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: italic;
+}
+    .ap-otp-input:focus {
+        outline: none !important;
+        border: 3px solid #1f6feb;
+        transition: 0.12s ease-in;
+    }
+    .list-group-item {
+        user-select: none;
+    }
+    .list-group-item:last-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .list-group input[type="radio"] {
+        display: none;
+    }
+    .list-group1 input[type="radio"] {
+        display: none;
+    }
+.list-group input[type="radio"]+.list-group-item {
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    border-color: transparent;
+    border: 1px solid #26CFC5;
+    font-size: 12px;
+}
+    .nominal-price {
+        font-size: 10px;
+        text-align: left;
+    }
+
+.nama-layanan-form {
+    /* font-weight: 600; */
+    color: #26CFC5;
+    /* padding: 0%; */
+    text-align: left;
+}
+
+   .list-group input[type="radio"]+label>.row>.col>.row>.nominal-price {
+    color: #6c757d;
+    font-style: italic;
+}
+    
+.list-group input[type="radio"]:checked+label>.row>.col>.row>.nominal-price {
+    color: #ffffff;
+    font-style: italic;
+}
+
+    .list-group input[type="radio"]+.list-group-item:before {
+        /* content: "\2713"; */
+        color: transparent;
+        font-weight: bold;
+        /* margin-right: 1em; */
+
+    }
+
+    .list-group input[type="radio"]+.list-group-item:hover {
+        cursor: pointer;
+        background-color: #adadad43;
+        color: #ffffff;
+        border-color: #adadad43;
+
+        font-size: 12px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .list-group input[type="radio"]:checked+.list-group-item:before {
+        color: inherit;
+    }
+    .list-group input[type="radio"]:checked+.list-group-item:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 28px;
+        height: 26px;
+        content: "";
+        background: url('../images/verified9dd4.png') top/cover;
+        text-align: center;
+    }
+.list-group input[type="radio"]:checked+.list-group-item {
+    color: #ef222243;
+    font-size: 12px;
+    border: 1px solid #26CFC5;
+    /*box-shadow: 0 0 2.22222vw #26CFC5, inset 0 2.40741vw 8.05556vw #26CFC5, inset 0 -8.24074vw 11.48148vw #26CFC5;*/
+    overflow: hidden;
+    background-color: #26CFC5;
+}
+    .list-group1 input[type="radio"]:checked+.list-group-item:before {
+        color: inherit;
+    }
+    .list-group1 input[type="radio"]:checked+.list-group-item {
+        background-color: #ffffff;
+        color: #fe6c17;
+        font-size: 12px;
+        display: block;
+        -webkit-filter: grayscale(0%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+    .list-group1 input[type="radio"]+.list-group-item {
+        text-align: center;
+        cursor: pointer;
+        /* background-color: #e8e8e8;
+        color: #fe6c17; */
+        border-color: transparent;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);
+        font-size: 12px;
+        border-radius: 3px;
+        background: rgb(208, 208, 208);
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+    .list-group1 input[type="radio"]+.list-group-item:hover {
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #fe6c17;
+        border-color: #ffffff;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
+        font-size: 12px;
+        border-radius: 3px;
+    }
+    .list-group1 input[type="radio"]:checked+.list-group-item:before {
+        color: inherit;
+    }
+
+        /* .list-group input[type="radio"]+.list-group-item:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 230, 0.5);
+            color: rgb(102, 102, 102);
+            border-color: #0d6efd;
+
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        .list-group input[type="radio"]:checked+.list-group-item {
+            background-color: #0d6efd;
+            color: #FFF;
+            font-size: 12px;
+        } */
+
+        #payment{
+            color:#b41414;
+        }
+        .list-group1 input[type="radio"]:checked+.list-group-item:before {
+            color: inherit;
+        }
+        .list-group1 input[type="radio"]:checked+.list-group-item {
+            background-color: #ffffff;
+            color: #0d6efd;
+            font-size: 12px;
+            display: block;
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+        }
+        .list-group1 input[type="radio"]+.list-group-item {
+            text-align: center;
+            cursor: pointer;
+            /* background-color: #e8e8e8;
+            color: #0d6efd; */
+            border-color: transparent;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);
+            font-size: 12px;
+            border-radius: 3px;
+            background: rgb(208, 208, 208);
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+        .list-group1 input[type="radio"]+.list-group-item:hover {
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #0d6efd;
+            border-color: #ffffff;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        .list-group1 input[type="radio"]:checked+.list-group-item:before {
+            color: inherit;
+        }

@@ -1,0 +1,66 @@
+.product {
+       padding-left: 10px;
+       padding-right: 10px;
+}
+
+.card-game{
+   display: -webkit-box;
+    display: flex;
+   align-items: center;
+    text-align: center;
+        position: relative;
+    margin-top: 30px;
+    padding: 33px 8px 8px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 16px;
+   box-shadow: 0 4px 8px rgb(0 0 0 / 3%);
+
+}
+   .card-image{
+      position: absolute;
+    top: -30px;
+    border-radius: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 76px;
+    height: 76px;
+   }
+   
+   .card-title{
+      margin-top: 30px;
+      font-size: 12px;
+      width: 100%;
+      font-weight: bold;
+   }
+   
+   .card-subtitle{
+      margin-bottom: 10px;
+      font-size: 12px;
+      width: 100%;
+   }
+   
+   .card-link{
+      width:100%;
+      color: #fff;
+   }
+   @media (max-width: 750px){
+   .product {
+       padding: 4px;
+   }
+   .list-product{
+      margin-right: -15px;
+      margin-left: -15px;
+   }
+   .card-image{
+      width: 65px;
+   }
+   .card-title{
+      margin-top: 15px;
+   }
+}
+   .card-link > a {
+          border-radius: 15px;
+   }
